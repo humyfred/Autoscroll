@@ -63,7 +63,7 @@
 ```html
     <script>
     
-      var a = new autoscroll({scrollId:'autoscroll',fixHeight:'200px',stopable:true,speed:10});
+      var a = new autoscroll({scrollId:'autoscroll',scrollIndex:0,fixHeight:'200px',stopable:true,speed:10});
 
    </script>
 ```   
@@ -72,7 +72,7 @@
 
 ###5.属性配置解说：
 scrollId：列表容器的id，
-
+scrollIndex: 列表容器在父亲元素的元素位置(不是节点位置)，如果父亲元素内只有列表容器则可忽略该属性,
 fixHeight:列表容器的父亲元素的高度，
 
 stopable：当鼠标移动到列表容器之上是否停止，
@@ -83,5 +83,6 @@ speed：  滚动速度；
 ##结语：
 
 若网友发现代码有bug或者有好的建议可以发邮件给我，谢谢！！
+代码也是刚才是写，有大问题就多多包涵!
 
 我的邮箱：513407656@qq.com
