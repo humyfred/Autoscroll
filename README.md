@@ -33,7 +33,7 @@
      </div>
 </div>
 ```
-### 3.引入autoscroll.js之后，在其后加一条js语句：
+### 3.API：
 ```html
     <script>
     
@@ -48,7 +48,7 @@
    </script>
 ```   
 
-### 4.配置说明：
+### 4.API配置说明：
 scrollId：列表id，
 
 scrollIndex: 列表所在父容器的元素位置(不是节点位置，如果父容器内只有列表则可忽略该属性),
