@@ -7,7 +7,7 @@
 
 ## 使用：
 
-### 1.只需在列表上层父容器加上id名：
+### 1.列表加上id名：
 ```html
 <div id="autoscroll">
      <div><a href="">1</a></div>
@@ -19,7 +19,7 @@
      <div><a href="">8</a></div>
 </div>
 ```
-### 2.用div标签包裹该父容器：
+### 2.用div标签包裹该列表：
 ```html
 <div>
      <div id="autoscroll">
