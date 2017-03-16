@@ -37,7 +37,7 @@
 ```html
     <script>
     
-      var a = new autoscroll({
+      var a = new Autoscroll({
           scrollId:'autoscroll',
           scrollIndex:0,
           fixHeight:'200px',
