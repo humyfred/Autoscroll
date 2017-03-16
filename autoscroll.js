@@ -1,30 +1,45 @@
-var autoscroll  = null;
+/* Autoscroll v1
+ * By humyfred https://humyfred.github.io/Autoscroll
+ * Github: https://github.com/humyfred/Autoscroll
+ * MIT Licensed.
+ */
+
+
 ;(function(){
 	/*
 		
 	*/
-	autoscroll = function(val){
+	 function Autoscroll(val){
 		this.scrollObj  = null;
 		val              = val || {};
 		this.scrollId    = val.scrollId;
 		this.scrollIdx   = val.scrollIndex || 0;
 		this.time        = val.speed || 40;
-		this.fixHeight   = val.fixHeight || '100px';
+		//this.fixHeight   = val.fixHeight|| '100px';
 		this.stopable    = val.stopable;  //是否可停止滚动
 		this.scrollCache = null;	//正在滚动的对象缓存
 		this.stopCache   = null;  //停止滚动的对象缓存
 		this.init();
 	}
 
-	autoscroll.prototype = {
+	Autoscroll.prototype = {
+        consturctor:Autoscroll,
 		init:function(){
 			this.scrollObj = document.getElementById(this.scrollId);
 			this.addScrollAction();
 		},
+		getFixHeight:function(){
+			var objHeight = this.scrollObj.clientHeight;
+			if(objHeight>380){
+				return 380;
+			}else{
+				return objHeight;
+			}
+		},
 		addScrollAction:function(){
 			var self              = this;
 			var parent            = this.scrollObj.parentNode;
-			parent.style.height   = self.fixHeight;
+			parent.style.height   = this.getFixHeight()+ 'px';
 			parent.style.overflow = 'hidden';
 			var clone             = self.cloneAndAppendParent(this.scrollObj,parent);
 			
@@ -109,4 +124,11 @@ var autoscroll  = null;
 		},
 	}
 	
-})()
+	
+	if (typeof module !== 'undefined' && typeof module.exports === 'object') {
+        module.exports = Autoscroll;
+    } else {
+        window.Autoscroll = Autoscroll;
+    }
+
+})();

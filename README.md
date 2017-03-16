@@ -1,4 +1,4 @@
-# autoscroll
+# Autoscroll
 
 ## 介绍：
 向上滚动插件...
@@ -82,9 +82,13 @@ stopable：当鼠标移动到列表容器之上是否停止，
 speed：  滚动速度；
 
 
-##结语：
 
+##License：
+This content is released under the MIT License.
+
+
+
+##结语：
 若网友发现代码有bug或者有好的建议可以发邮件给我，谢谢！！
 
 
-我的邮箱：513407656@qq.com

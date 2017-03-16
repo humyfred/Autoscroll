@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>广汽三菱集客运营大赛</title>
+
+    <!-- Bootstrap -->
+    <!-- <link href="./style.css" rel="stylesheet"> -->
+    <style type="text/css">
+      
+      *{
+        margin: 0;
+        padding: 0;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        -webkit-text-size-adjust: none;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      fieldset,
+      img {
+        border: 0;
+      }
+      address,
+      caption,
+      cite,
+      code,
+      dfn,
+      em,
+      strong,
+      th,
+      var,
+      i {
+        font-style: normal;
+        font-weight: normal;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      caption,
+      th {
+        text-align: left;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: 100%;
+        font-weight: normal;
+      }
+      q:before,
+      q:after {
+        content: '';
+      }
+
+      html,body{
+        width:100%;
+        height:100%;
+      }
+      body{
+        font: 14px/2.5 "Microsoft YaHei","Hiragino Sans GB W3","Heiti SC","Helvetica Neue", Helvetica;
+        background: #0f2137;
+      }
+      img{
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+      }
+
+      .banner{
+        height: 100%;
+      }
+
+      .data-wrap{
+        color:#FFF;
+      }
+
+
+      .data-wrap .item{
+        padding-top: 23px;
+        padding-bottom: 25px;
+        background: url('./integral4.png') no-repeat;
+        background-size: contain;
+      }
+     
+
+
+      .data-wrap .header{
+        margin: 0 auto;
+        width: 100%;
+        height: 58px;
+        color: #e1484f;
+        text-align: center;
+        font-size: 17px;
+        line-height: 34px;
+        background: url('./table-header.png') no-repeat;
+        background-size: 100%;
+      }
+
+      .item .table-wrap{
+        height: 386px;
+        margin-top:55px;
+        overflow: hidden;
+      }
+
+
+      .item .table-caption{
+        position: absolute;
+        margin-top: -35px;
+        left: 2.6%;
+        width:115px;
+        height:35px;
+        font-size: 15px;
+        line-height: 42px;
+        color:#fff;
+      }
+
+      .item .table-caption span{
+        margin-left: 16px;
+      }
+          
+      .item .table-time{
+        position: absolute;
+        font-size: 12px;
+        right: 2.5%;
+        margin-top: -30px;
+      }
+
+
+      .item table{
+        margin:0 auto;
+        width:95%;
+        text-align: center;
+      }
+
+      .item table thead{
+        width:100%;
+        background: #1e426e;
+      }
+
+      .item table tbody{
+        
+      }
+      .item table.col4 td:nth-child(1) {
+          width:10%;
+      }
+      .item table.col4 td:nth-child(2) {
+          width:20%;
+      }
+      .item table.col4 td:nth-child(3) {
+          width:20%;
+      }
+      .item table.col4 td:nth-child(4) {
+          width:50%;
+      }
+
+      .item table.col3 td:nth-child(1) {
+          width:10%;
+      }
+      .item table.col3 td:nth-child(2) {
+          width:60%;
+      }
+      .item table.col3 td:nth-child(3) {
+          width:30%;
+      }
+
+      .item table tbody tr:nth-child(odd){
+        background: #132b47;
+      }
+
+      .item table tbody tr:nth-child(even){
+        background: #0d1d30;
+      }
+
+
+      .item .separator{
+        margin: 0 auto;
+        height: 4px;
+        margin-top:20px;
+        padding-bottom:7px;
+        background: url('./separator.png') no-repeat;
+        background-size: 100%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class='banner'>
+        <img src="./integral1.png">
+    </div>
+    <div class='main'>
+        <div class='rule-wrap'>
+          <img src="./integral2.png">
+          <img src="./integral3.png">
+        </div>
+        <div class='data-wrap'>
+          <div class='item'>
+              <div class='header'>
+                  <span></span>
+              </div>
+
+              <div class='table-wrap'>
+                  <div class='table-caption'><span>销售达人</span></div>
+                  <div class='table-time'><span>更新时间：2016-3-13 11:24</span></div>
+                  <table class='col4' style='position: absolute;margin-top:-1px;margin-left: 2.6%;z-index: 1000;'>
+                     <thead>
+                        <tr ><td></td><td >参赛者</td><td >新增积分</td><td >所属4S店</td></tr>
+                       </tr>
+                      </thead>
+                  </table>
+                  <table class='col4' id='autoscroll'>
+                      <tbody >
+                          <tr><td>1</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>2</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>3</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>4</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>5</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>6</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>7</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>8</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>9</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>10</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>11</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>12</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>13</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>14</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+
+                      </tbody>
+                  </table>  
+                   
+              </div>
+          </div>
+
+          <div class='item'>
+            
+              <div class='table-wrap'>
+                  <div class='table-caption'><span>售后达人</span></div>
+                  <div class='table-time'><span>更新时间：2016-3-13 11:24</span></div>
+                  <table class='col4' style='position: absolute;margin-top:-1px;margin-left: 2.6%;z-index: 1000;'>
+                     <thead>
+                        <tr ><td></td><td >参赛者</td><td >新增积分</td><td >所属4S店</td></tr>
+                       </tr>
+                      </thead>
+                  </table>
+                  <table class='col4' id='autoscroll2'>
+ 
+                      <tbody class='autoscroll'>
+                          <tr><td>1</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>2</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>3</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>4</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>5</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>6</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>7</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>8</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>9</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>10</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>11</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>12</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>13</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>14</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>15</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>16</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>17</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+
+                      </tbody>
+                  </table>  
+              </div>
+          </div>
+
+
+          <div class='item'>
+            
+              <div class='table-wrap'>
+                  <div class='table-caption'><span>市场达人</span></div>
+                  <div class='table-time'><span>更新时间：2016-3-13 11:24</span></div>
+                  <table class='col4' style='position: absolute;margin-top:-1px;margin-left: 2.6%;z-index: 1000;'>
+                     <thead>
+                        <tr ><td></td><td >参赛者</td><td >新增积分</td><td >所属4S店</td></tr>
+                       </tr>
+                      </thead>
+                  </table>
+                  <table class='col4' id='autoscroll3'>
+ 
+                      <tbody class='autoscroll'>
+                          <tr><td>1</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>2</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>3</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>4</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>5</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>6</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>7</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>8</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>9</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>10</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>11</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>12</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>13</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>14</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>15</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>16</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+                          <tr><td>17</td><td>王二锤</td><td>24</td><td>广汽三菱深圳4S店</td></tr>
+
+                      </tbody>
+                  </table>  
+              </div>
+          </div>
+
+
+
+          <div class='item'>
+
+              <div style="margin-top:37px;" class='table-wrap'>
+                  <div class='table-caption'><span>团队赛</span></div>
+                  <div class='table-time'><span>更新时间：2016-3-13 11:24</span></div>
+                  <table class='col4' style='position: absolute;margin-top:-1px;margin-left: 2.6%;z-index: 1000;'>
+                     <thead>
+                        <tr><td></td><td>所属4S店</td><td>新增积分</td></tr>
+                      </thead>
+                  </table>
+                  <table class='col3' id='autoscroll4'>
+      
+                      <tbody>
+                          <tr><td>1</td><td>广汽三菱深圳4S店</td><td>24</td></tr>
+                          <tr><td>2</td><td>广汽三菱深圳4S店</td><td>24</td></tr>
+                          <tr><td>3</td><td>广汽三菱深圳4S店</td><td>24</td></tr>
+                          <tr><td>4</td><td>广汽三菱深圳4S店</td><td>24</td></tr>
+                          <tr><td>5</td><td>广汽三菱深圳4S店</td><td>24</td></tr>
+                          <tr><td>6</td><td>广汽三菱深圳4S店</td><td>24</td></tr>
+                          <tr><td>7</td><td>广汽三菱深圳4S店</td><td>24</td></tr>
+                          <tr><td>8</td><td>广汽三菱深圳4S店</td><td>24</td></tr>
+                          <tr><td>9</td><td>广汽三菱深圳4S店</td><td>24</td></tr>
+                          <tr><td>10</td><td>广汽三菱深圳4S店</td><td>24</td></tr>
+                          <tr><td>11</td><td>广汽三菱深圳4S店</td><td>24</td></tr>
+                          <tr><td>12</td><td>广汽三菱深圳4S店</td><td>24</td></tr>
+                       </tbody>   
+                  </table>  
+              </div>
+             
+              <div class='qr-code'>
+                <img src="integral5.png">
+              </div>
+          </div>
+        </div>
+    </div>
+    <div></div>
+  </body>
+   <script src='../autoscroll.js'></script>
+   <script type="text/javascript">
+      //document.domain = 'http://pc.gmmc.com.cn'
+      var $ = {
+        findByTagName : function(Tag){
+          return Array.prototype.slice.apply(document.getElementsByTagName(Tag));
+        },
+        findByClassName:function(className){
+          return Array.prototype.slice.apply(document.getElementsByClassName(className));
+        }
+      }
+
+
+      var dateFormat= function(){
+          var date = new Date();
+          var dateFormatObj = {
+            1:'01',
+            2:'02',
+            3:'03',
+            4:'04',
+            5:'05',
+            6:'06',
+            7:'07',
+            8:'08',
+            9:'09'
+          }
+          var year  = 1900 + date.getYear()
+          var month = dateFormatObj[date.getMonth()+1] || date.getMonth();
+          var day   = dateFormatObj[date.getDate()] || date.getDate();
+          var hours = dateFormatObj[date.getHours()] || date.getHours();
+          var minues= dateFormatObj[date.getMinutes()] || date.getMinutes();
+
+          return year+'-'+month+'-'+day+' '+hours+':'+minues;
+      }
+
+      var dateTime  = dateFormat();
+
+      var initDate = function(){
+        var doms = $.findByClassName('table-time');
+        doms.forEach(function(dom){
+            dom.innerHTML = dateTime;
+        })
+      }
+
+  
+      initDate();
+      
+       var a = new Autoscroll({scrollId:'autoscroll',scrollIndex:0,stopable:false,speed:18});
+       var b = new Autoscroll({scrollId:'autoscroll2',scrollIndex:0,stopable:false,speed:18});
+       var c = new Autoscroll({scrollId:'autoscroll3',scrollIndex:0,stopable:false,speed:18});
+       var d = new Autoscroll({scrollId:'autoscroll4',scrollIndex:0,stopable:false,speed:18});
+   </script>
+</html>
