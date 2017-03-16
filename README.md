@@ -7,35 +7,22 @@
 
 ## 使用：
 
-###1.只需在列表直属父容器加上id名：
+###1.只需在列表上层父容器加上id名：
 ```html
 <div id="autoscroll">
-          <div><a href="">1</a></div>
-          <div><a href="">2</a></div>
-          <div><a href="">3</a></div>
-          <div><a href="">4</a></div>
-          <div><a href="">5</a></div>
-          <div><a href="">7</a></div>
-          <div><a href="">8</a></div>
-          <div><a href="">9</a></div>
-          <div><a href="">0</a></div>
-          <div><a href="">00</a></div>
-          <div><a href="">--</a></div>
-          <div><a href="">22</a></div>
-          <div><a href="">44</a></div>
-          <div><a href="">66</a></div>
-          <div><a href="">55</a></div>
-          <div><a href="">44</a></div>
-          <div><a href="">33</a></div>
-          <div><a href="">11</a></div>
-          <div><a href="">22</a></div>
-          <div><a href="">11</a></div>
+     <div><a href="">1</a></div>
+     <div><a href="">2</a></div>
+     <div><a href="">3</a></div>
+     <div><a href="">4</a></div>
+     <div><a href="">5</a></div>
+     <div><a href="">7</a></div>
+     <div><a href="">8</a></div>
 </div>
 ```
-###2.用div标签包裹该列表容器：
+###2.用div标签包裹该父容器：
 ```html
 <div>
-<div id="autoscroll">
+     <div id="autoscroll">
           <div><a href="">1</a></div>
           <div><a href="">2</a></div>
           <div><a href="">3</a></div>
@@ -43,34 +30,25 @@
           <div><a href="">5</a></div>
           <div><a href="">7</a></div>
           <div><a href="">8</a></div>
-          <div><a href="">9</a></div>
-          <div><a href="">0</a></div>
-          <div><a href="">00</a></div>
-          <div><a href="">--</a></div>
-          <div><a href="">22</a></div>
-          <div><a href="">44</a></div>
-          <div><a href="">66</a></div>
-          <div><a href="">55</a></div>
-          <div><a href="">44</a></div>
-          <div><a href="">33</a></div>
-          <div><a href="">11</a></div>
-          <div><a href="">22</a></div>
-          <div><a href="">11</a></div>
-</div>
+     </div>
 </div>
 ```
 ###3.引入autoscroll.js之后，在其后加一条js语句：
 ```html
     <script>
     
-      var a = new autoscroll({scrollId:'autoscroll',scrollIndex:0,fixHeight:'200px',stopable:true,speed:10});
+      var a = new autoscroll({
+          scrollId:'autoscroll',
+          scrollIndex:0,
+          fixHeight:'200px',
+          stopable:true,
+          speed:10
+     });
 
    </script>
 ```   
-###4.结束
 
-
-###5.属性配置解说：
+###4.属性配置解说：
 scrollId：列表容器的id，
 
 scrollIndex: 列表容器在父亲元素的元素位置(不是节点位置)，如果父亲元素内只有列表容器则可忽略该属性,
