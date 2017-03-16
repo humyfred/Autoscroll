@@ -7,7 +7,7 @@
 
 ## 使用：
 
-###1.只需在列表上层父容器加上id名：
+### 1.只需在列表上层父容器加上id名：
 ```html
 <div id="autoscroll">
      <div><a href="">1</a></div>
@@ -19,7 +19,7 @@
      <div><a href="">8</a></div>
 </div>
 ```
-###2.用div标签包裹该父容器：
+### 2.用div标签包裹该父容器：
 ```html
 <div>
      <div id="autoscroll">
@@ -33,7 +33,7 @@
      </div>
 </div>
 ```
-###3.引入autoscroll.js之后，在其后加一条js语句：
+### 3.引入autoscroll.js之后，在其后加一条js语句：
 ```html
     <script>
     
@@ -48,7 +48,7 @@
    </script>
 ```   
 
-###4.属性配置解说：
+### 4.属性配置解说：
 scrollId：列表容器的id，
 
 scrollIndex: 列表容器在父亲元素的元素位置(不是节点位置)，如果父亲元素内只有列表容器则可忽略该属性,
@@ -61,12 +61,12 @@ speed：  滚动速度；
 
 
 
-##License：
+## License：
 This content is released under the MIT License.
 
 
 
-##结语：
+## 结语：
 若网友发现代码有bug或者有好的建议可以发邮件给我，谢谢！！
 
 
