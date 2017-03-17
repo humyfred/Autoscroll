@@ -7,23 +7,23 @@
 
 ;(function(){
 	/*
-		
+
 	*/
-	 function Autoscroll(val){
-		this.scrollObj  = null;
-		val              = val || {};
-		this.scrollId    = val.scrollId;
-		this.scrollIdx   = val.scrollIndex || 0;
-		this.time        = val.speed || 40;
-		//this.fixHeight   = val.fixHeight|| '100px';
-		this.stopable    = val.stopable;  //是否可停止滚动
+	 function Autoscroll(options){
+		this.scrollObj   = null;
+		options          = options || {};
+		this.scrollId    = options.scrollId;
+		this.scrollIdx   = options.scrollIndex || 0;
+		this.time        = options.speed || 40;
+		//this.fixHeight = options.fixHeight|| '100px';
+		this.stopable    = options.stopable;  //是否可停止滚动
 		this.scrollCache = null;	//正在滚动的对象缓存
 		this.stopCache   = null;  //停止滚动的对象缓存
 		this.init();
 	}
 
 	Autoscroll.prototype = {
-        consturctor:Autoscroll,
+    consturctor:Autoscroll,
 		init:function(){
 			this.scrollObj = document.getElementById(this.scrollId);
 			this.addScrollAction();
@@ -42,7 +42,7 @@
 			parent.style.height   = this.getFixHeight()+ 'px';
 			parent.style.overflow = 'hidden';
 			var clone             = self.cloneAndAppendParent(this.scrollObj,parent);
-			
+
 			if(self.stopable){		//注册鼠标事件
 				self.stopToView()
 			}
@@ -78,7 +78,7 @@
 
 				val.timer = setTimeout(function(){
 					self.toScroll();
-				}, self.time);	
+				}, self.time);
 			}
 
 		},
@@ -95,9 +95,7 @@
 				if(this.stopCache===null){
 					this.stopCache = {obj:target};
 				}
-				
-			})
-
+			});
 			this.bindFn(parent,'mouseout',function(e){
 				var target = e?e.currentTarget.children[this.scrollIdx]:event.srcElement.parentNode.parentNode;
 				var self   = this;
@@ -110,7 +108,6 @@
 					this.stopCache       = null;
 				}
 			})
-
 		},
 		nextElement:function(obj){
 			return obj.nextSibling.nextSibling;
@@ -123,12 +120,12 @@
 			}
 		},
 	}
-	
-	
+
+
 	if (typeof module !== 'undefined' && typeof module.exports === 'object') {
-        module.exports = Autoscroll;
-    } else {
-        window.Autoscroll = Autoscroll;
-    }
+    module.exports = Autoscroll;
+  } else {
+    window.Autoscroll = Autoscroll;
+  }
 
 })();
