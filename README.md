@@ -1,7 +1,7 @@
 # Autoscroll
 
 ## 介绍：
-基于原生JS编写的自动向上滚动插件，轻便，好用;
+基于原生JS的自动向上滚动插件，轻便，好用;
 
 效果展示(移动端):https://humyfred.github.io/autoscroll/
 
