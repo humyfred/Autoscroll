@@ -23,7 +23,7 @@
 	}
 
 	Autoscroll.prototype = {
-    consturctor:Autoscroll,
+		consturctor:Autoscroll,
 		init:function(){
 			this.scrollObj = document.getElementById(this.scrollId);
 			this.addScrollAction();
