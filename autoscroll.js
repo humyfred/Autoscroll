@@ -121,8 +121,7 @@
 		},
 	}
 
-
-	if (typeof module !== 'undefined' && typeof module.exports === 'object') {
+  if (typeof module !== 'undefined' && typeof module.exports === 'object') {
     module.exports = Autoscroll;
   } else {
     window.Autoscroll = Autoscroll;
